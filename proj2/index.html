@@ -9,6 +9,11 @@
     </head>
     <body>
         <div id="game-container">
+            <div id="game-header">
+                <div id="game-result" style="display: none"></div>
+                <div id="current-turn">it's X's turn</div>
+            </div>
+
             <div id="game-board" class="grid-container">
                 <div class="cell" data-index="0"></div>
                 <div class="cell" data-index="1"></div>
@@ -20,26 +25,30 @@
                 <div class="cell" data-index="7"></div>
                 <div class="cell" data-index="8"></div>
             </div>
-            <div id="current-turn">it's X's turn</div>
-            <button id="start-restart">Start/Restart</button>
-            <button id="play-again" style="display: none">Play Again?</button>
-            <div id="game-result" style="display: none"></div>
-            <div>
-                <input
-                    type="radio"
-                    id="player-vs-player"
-                    name="game-mode"
-                    value="Player V Player"
-                    checked
-                />
-                <label for="player-vs-player">Player V Player</label>
-                <input
-                    type="radio"
-                    id="player-vs-computer"
-                    name="game-mode"
-                    value="Player V Computer"
-                />
-                <label for="player-vs-computer">Player V Computer</label>
+
+            <div id="game-controls">
+                <button id="start-restart">Start/Restart</button>
+            </div>
+
+            <div id="game-settings">
+                <div class="glass-radio-group">
+                    <input
+                        type="radio"
+                        id="player-vs-player"
+                        name="game-mode"
+                        value="Player V Player"
+                        checked
+                    />
+                    <label for="player-vs-player">Player V Player</label>
+                    <input
+                        type="radio"
+                        id="player-vs-computer"
+                        name="game-mode"
+                        value="Player V Computer"
+                    />
+                    <label for="player-vs-computer">Player V Computer</label>
+                    <div class="glass-glider"></div>
+                </div>
             </div>
         </div>
     </body>
